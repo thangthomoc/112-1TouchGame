@@ -1540,6 +1540,9 @@ GameObject:
   - component: {fileID: 1845861996}
   - component: {fileID: 1845862001}
   - component: {fileID: 1845862002}
+  - component: {fileID: 1845862004}
+  - component: {fileID: 1845862005}
+  - component: {fileID: 1845862003}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1614,9 +1617,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1845861993}
+  - {fileID: 1845862004}
   selectedCommands:
-  - {fileID: 1845862002}
+  - {fileID: 1845862003}
   variables: []
   description: 
   stepPause: 0
@@ -1761,7 +1764,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &1845862002
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1776,6 +1779,65 @@ MonoBehaviour:
   target:
     gameObjectRef: {fileID: 0}
     gameObjectVal: {fileID: 405225955}
+--- !u!114 &1845862003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845861991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779fdb236b4ca6343a6d631108388e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  target:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 405225955}
+--- !u!114 &1845862004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845861991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 117.79263
+    y: 325.7912
+    width: 125.294106
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 6
+  blockName: "\u4E0D\u8981\u522A\u9664BGM"
+  description: 
+  eventHandler: {fileID: 1845862005}
+  commandList:
+  - {fileID: 1845862003}
+  suppressAllAutoSelections: 0
+--- !u!114 &1845862005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845861991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1845862004}
+  suppressBlockAutoSelect: 0
+  waitForFrames: 1
 --- !u!1 &1924805280
 GameObject:
   m_ObjectHideFlags: 0
